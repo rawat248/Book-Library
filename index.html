@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+    <!-- <link rel="stylesheet" href="style.css"> -->
+    <title>Book List</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2 style="margin-bottom: 20px">Book Library Manager</h2>
+      <h5 style="margin-bottom: 20px">Add Book</h5>
+      <form id="book-form">
+        <div>
+          <label for="title">Title</label>
+          <input type="text" id="title" />
+        </div>
+        <div>
+          <label for="author">Author</label>
+          <input type="text" id="author" />
+        </div>
+        <div>
+          <label for="isbn">ISBN#</label>
+          <input type="text" id="isbn" />
+        </div>
+        <div>
+          <input
+            id="submit"
+            style="margin: 10px 0px"
+            type="submit"
+            value="Add Book"
+            class="btn"
+          />
+        </div>
+      </form>
+      <table>
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Author</th>
+            <th>ISBN</th>
+            <th>Remove Book</th>
+          </tr>
+        </thead>
+        <tbody id="book-list"></tbody>
+      </table>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
